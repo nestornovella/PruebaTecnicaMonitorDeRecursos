@@ -1,0 +1,25 @@
+{
+  "name": "aplicacion-de-electron-midudev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^25.3.2",
+    "standard": "^17.1.0"
+  },
+  "dependencies": {
+    "ps-list": "^8.1.1",
+    "systeminformation": "^5.18.10"
+  },
+  "permissions": [
+    "system",
+    "processes"
+  ]
+}

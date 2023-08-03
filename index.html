@@ -1,0 +1,110 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <!-- mainSection -->
+    <main id="main">
+      <h2 class="title">Resource Meter </h2>
+      <div class="counterContainer">
+        <section class="mainSection">
+          <div>
+            <button id="start">Start🤞</button>
+             <button id="reset">Reset🧹</button>
+          </div>
+            <!-- PathSection -->
+          <div>
+            <input id="input" type="text" />
+            <p id="pathDir">path: select the root path...</p>
+            <button id="path">Browse</button>
+          </div>
+        </section>
+       <!-- MemorySection -->
+        <h3 id="memory">MEMORY</h3>
+        <section class="memoryContainer">
+          <div>
+            <p>Average</p>
+            <span id="promedioRam">0.0 %</span>
+          </div>
+          <div>
+            <p>Current</p>
+            <span id="actualRam">0.0 %</span>
+          </div>
+          <div>
+            <p>Max</p>
+            <span id="maxValue">0.0 %</span>
+          </div>
+        </section>
+          <!-- CpuSection -->
+        <h3 id="memory">CPU</h3>
+        <section class="memoryContainer">
+          <div>
+            <p>Average</p>
+            <span id="promedioCpu">0.0 %</span>
+          </div>
+          <div>
+            <p>Current</p>
+            <span id="actualCpu">0.0 %</span>
+          </div>
+          <div>
+            <p>Max</p>
+            <span id="maxValueCpu">0.0 %</span>
+          </div>
+        </section>
+      </div>
+  <!-- EnergySection -->
+      <h3 id="memory">Energy</h3>
+      <section class="energyContayner">
+        <div>
+          <span id="promedioW">0.0 W/min</span>
+      </section>
+      <!-- SystemInformation -->
+      <h2 class="titleSysInfo">System Information</h2>
+      <section id="resucessSection">
+        <div id="memoContainer">
+          <img src="./assets/ram.png" alt="" />
+          <article id="ramValues">
+            <p>total: <span id="totalRam">-</span></p>
+            <p>used: <span id="usedRam">-</span></p>
+            <p>free: <span id="freeRam">-</span></p>
+          </article>
+        </div>
+
+        <div id="cpuContainer">
+          <img src="./assets/cpu.png" alt="" />
+          <article id="ramValues">
+            <p>brand: <span id="brandCpu">-</span></p>
+            <p>max-Speed: <span id="SpeedCpu">-</span></p>
+            <p>vendor: <span id="vendorCpu">-</span></p>
+          </article>
+        </div>
+        <div id="sistemContainer">
+          <img src="./assets/os.png" alt="" />
+          <article id="ramValues">
+            <p>manufacturer: <span id="manufacturerOs">-</span></p>
+            <p>model: <span id="modelOs">-</span></p>
+            <p>version: <span id="versionOs">-</span></p>
+          </article>
+        </div>
+      </section>
+      <footer>
+        <p>github: https://github.com/nestornovella</p>
+        <p>linkedin: https://www.linkedin.com/in/nestor-novella-full-stack-dev/</p>
+        <a href=""></a>
+      </footer>
+    </main>
+  </body>
+  <script defer src="rendered.js"></script>
+</html>
